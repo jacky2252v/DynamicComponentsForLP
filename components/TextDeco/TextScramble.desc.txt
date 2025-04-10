@@ -1,0 +1,13 @@
+TextScrambler Component
+
+A React component that animates a "hacker-style" text scramble effect on mouse hover. 
+When the user hovers over the text, each character rapidly cycles through random symbols, numbers, and letters before settling back into the original text.    
+
+Features:  
+- Supports any string passed as children  
+- Prevents overlapping animations using useRef  
+- Fully resets to original text after animation  
+- Cleans up intervals on unmount to prevent memory leaks    
+
+Usage:  
+<TextScrambler>HELLO WORLD</TextScrambler>
