@@ -1,0 +1,36 @@
+/**
+ * GlitchText Component
+ * 
+ * A React component that applies a stylish, animated "glitch" effect to any text.
+ * This component supports both dark and light themes, and leverages pseudo-elements
+ * (`::before` and `::after`) with `clip-path` animations to create the distortion illusion.
+ * 
+ * Features:
+ * - Fully responsive and customizable via Tailwind utility classes (`text-5xl`, etc.)
+ * - Works with both dark and light themes by styling accordingly
+ * - Accepts any React children as its content
+ * - Uses a `data-text` attribute for glitch layers to match the original text
+ * 
+ * Usage:
+ * 
+ * ```tsx
+ * <GlitchText>Hello World</GlitchText>
+ * ```
+ * 
+ * Optionally, pass your own custom Tailwind classes:
+ * 
+ * ```tsx
+ * <GlitchText className="text-4xl text-red-500">Glitched Out</GlitchText>
+ * ```
+ */
+
+/**
+*How it works (CSS-side):
+*The .glitch-text class uses ::before and ::after pseudo-elements to duplicate the text.
+*
+*These layers are offset slightly and colored (green + magenta for dark mode, more subtle in light mode).
+*
+*clip-path animations randomly "slice" the text to simulate distortion.
+*
+*Works seamlessly across themes using .dark and .light class targeting.
+*/
